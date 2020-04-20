@@ -26,7 +26,6 @@ class Migration(migrations.Migration):
                 ('subject', models.CharField(max_length=100)),
                 ('notes', models.TextField(null=True)),
                 ('dueDate', models.DateField()),
-                ('tags', models.ManyToManyField(to='tasks.Tags')),
             ],
         ),
     ]

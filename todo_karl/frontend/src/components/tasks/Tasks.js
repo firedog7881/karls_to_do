@@ -25,7 +25,6 @@ export class Tasks extends Component {
                             <th>Subject</th>
                             <th>Notes</th>
                             <th>Due Date</th>
-                            <th>Tags</th>
                             <th />
                         </tr>
                     </thead>
@@ -36,7 +35,6 @@ export class Tasks extends Component {
                                 <td>{task.subject}</td>
                                 <td>{task.notes}</td>
                                 <td>{task.dueDate}</td>
-                                <td>{task.tags}</td>
                                 <td><button onClick={this.props.deleteTask.bind(this, task.id)} className="btn btn-danger btn-sm">Delete</button></td>
                             </tr>
                         ))}

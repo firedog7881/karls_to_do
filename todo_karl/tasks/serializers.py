@@ -12,4 +12,4 @@ class TagSerializer(serializers.HyperlinkedModelSerializer):
 class TaskSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Tasks
-        fields = ["id", "subject", "notes", "dueDate", "tags"]
+        fields = ["id", "subject", "notes", "dueDate"]
